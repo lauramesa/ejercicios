@@ -1,0 +1,152 @@
+#PROBLEMAS SECUENCIALES
+#1
+cap_inv = float (input("¿cuales su capital a invertir?"))
+print("NOTA: Después de un mes, si el banco paga a razón de 2% mensual.")
+aRazonD = 0.02
+ganancia = (cap_inv*aRazonD)
+print(f" sus ganancias seran de: {ganancia}")
+
+#2
+salary= float(input("ingrese su sueldo base"))
+v1= float(input("valor de primera venta"))
+v2= float(input("valor de segunda venta"))
+v3= float(input("valor de tercera venta"))
+t_ventas = (v1+v2+v3)
+comision= (t_ventas*0.10)
+tpag= salary+comision
+print(f"Tu sueldo base mas un 10% por comisiones de sus ventas es de: {tpag}")
+
+#3
+t_buy= float(input("valor total de tu compra"))
+print("NOTA: descuento del 15% sobre el valor de la compra")
+discount = (t_buy*0.15)
+t_pay= (t_buy-discount)
+print(f"el valor a pagar es de: {t_pay}")
+
+#4
+c1= float(input("ingrese primera nota de la calificacion parcial"))
+c2= float(input("ingrese segunda nota de la calificacion parcial"))
+c3= float(input("ingrese tercera nota de la calificacion parcial"))
+prom=(c1+c2+c3)/3
+examf= float(input("ingrese calificacion del examen final"))
+traf= float(input("ingrese calificacion del examen final"))
+ppar = prom*0.55
+ef= traf*0.30
+tf= traf*0.15
+noteAnd= ppar+ef+tf
+print(f"tu calificacion final sera de: {noteAnd}")
+
+#5
+print("¿cual es el porcentaje de hombres y de mujeres que hay en un grupo?")
+man= int(input("ingresa el numero de hombres"))
+woman= int(input("ingresa el numero de mujeres"))
+tn= man+woman
+pm= man*100/tn
+pw= woman*100/tn
+print(f"el porcentaje de hombres es de: {man} %")
+print(f"el porcentaje de mujeres es de: {woman} %")
+
+#6
+print("calcular la edad de una persona")
+f_nac= int(input("ingresar año de nacimiento  ej:2000 "))
+f_act= int(input("ingresar el año actual"))
+edad= f_act-f_nac
+print(f"aproximadamente tu edad es de: {edad}")
+
+#PROBLEMAS PROPUESTOS
+#1
+c_pesos= float(input("ingresar la cantidad en pesos"))
+u_cam= float(input("ingresar unidad de cambio"))
+euro= c_pesos*u_cam
+print(f"la equivalencia en dolares es de: {euro}")
+
+#2
+number= float(input("ingresar un numero"))
+p= number*(1)
+n= number*(-1)
+if number>=0:
+    print(f"el valor absoluto es de: {p} es positivo")
+else:
+    print(f"el valor absoluto es de: {n} es negativo")
+
+#3
+p= float(input("ingresa la presion"))
+v= float(input("ingresa el volumen"))
+t= float(input("ingresa la temperatura"))
+masa=(p*v)/(0.37*(t+460))
+print(f"la masa de aire es de: {masa}")
+
+#4
+edad= int(input("ingresa tu edad actual"))
+n_pul= (220-edad)/10
+print(f"por cada 10 segundos de ejercicio, aproximadamente tu numero de pulsasiones debe ser de: {n_pul}")
+
+#5
+aSala= float(input("ingresa el valor del salario "))
+incremento=(aSala*0.25)
+print(f"con un incremento del 25%, tu salario actual sera de: {incremento}")
+
+#6
+anual= float(input("ingrese el presupuesto anual"))
+g= anual*0.40
+t= anual*0.30
+p= anual*0.30
+print(f"el presupuesto para el area de ginecologia es de: {g}")
+print(f"el presupuesto para el area de traumatologia es de: {t}")
+print(f"el presupuesto para el area de pediatria es de: {p}")
+
+#7
+precio1= float(input("ingresar precio del articulo"))
+ganacia1= (precio1*30/100)+ precio1
+print(f"el precio total del articulo es de: {ganacia1}")
+
+#8
+day1= float(input("ingresa el tiempo del primer dia"))
+day2= float(input("ingresa el tiempo del segundo dia"))
+day3= float(input("ingresa el tiempo del tercer dia"))
+total_Time= (day1+day2+day3)/3
+print(f"El tiempo promedio que la persona tarda en recorrer la ruta es de: {total_Time}")
+
+
+#9
+inver56= float(input("ingrese el valor del contribuyente 0456"))
+inver57= float(input("ingrese el valor del contribuyente 0457"))
+inver58= float(input("ingrese el valor del contribuyente 0458"))
+ttotal_inv= inver56+inver57+inver58
+t_inv1= (inver56/ttotal_inv)*100
+t_inv2= (inver57/ttotal_inv)*100
+t_inv3= (inver58/ttotal_inv)*100
+print(f"el contribuyente 0456 el porcentaje de inversion es de: {inver56}")
+print(f"el contribuyente 0457 el porcentaje de inversion es de: {inver57}")
+print(f"el contribuyente 0458 el porcentaje de inversion es de: {inver58}")
+
+#10
+print("ingresar notas para calcular el promedio de las materias")
+ex_mate= float(input("ingrese la nota del examen de Matematicas"))
+n_mate1= float(input("ingrese las primera nota de Matematicas"))
+n_mate2= float(input("ingrese las segunda nota de Matematicas"))
+n_mate3= float(input("ingrese las tercera nota de Matematicas"))
+prom_exM= ex_mate*0.90
+prom_nM= (n_mate1+n_mate2+n_mate3)/3 * 0.10
+prom_M= prom_exM+prom_nM
+
+ex_fisi= float(input("ingrese la nota del examen de Fisica"))
+n_fisi1= float(input("ingrese las primera nota de Fisica"))
+n_fisi2= float(input("ingrese las segunda nota de Fisica"))
+prom_exF= ex_fisi*0.80
+prom_nF= (n_fisi1+n_fisi2)/2 * 0.20
+prom_F= prom_exF+prom_nF
+
+ex_kimi= float(input("ingrese la nota del examen de Quimica"))
+n_kimi1= float(input("ingrese las primera nota de Matematicas"))
+n_kimi2= float(input("ingrese las segunda nota de Matematicas"))
+n_kimi3= float(input("ingrese las tercera nota de Matematicas"))
+prom_exQ= ex_kimi*0.85
+prom_nQ= (n_kimi1+n_kimi2+n_kimi3)/3 * 0.15
+prom_Q= prom_exQ+prom_exQ
+
+print(f"el promedio de las notas de Matematicas es de: {prom_M}")
+print(f"el promedio de las notas de Fisica es de: {prom_F}")
+print(f"el promedio de las notas de Quimica es de: {prom_Q}")
+
+
